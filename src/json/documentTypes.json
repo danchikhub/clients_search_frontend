@@ -1,0 +1,920 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "docName": "Паспорт/ID-карта",
+            "docCode": 1,
+            "docNum": 0,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": true,
+            "isResident": true,
+            "sortOrder": null
+        },
+        {
+            "id": 2,
+            "docName": "Удостоверение личности офицера (прапорщика)",
+            "docCode": 4,
+            "docNum": 1,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": true,
+            "isResident": true,
+            "sortOrder": null
+        },
+        {
+            "id": 3,
+            "docName": "Военный билет",
+            "docCode": 7,
+            "docNum": 2,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": true,
+            "isResident": true,
+            "sortOrder": null
+        },
+        {
+            "id": 4,
+            "docName": "Паспорт Минморфлота",
+            "docCode": 6,
+            "docNum": 3,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 5,
+            "docName": "Свидетельство о рождении",
+            "docCode": 3,
+            "docNum": 4,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 6,
+            "docName": "Загранпаспорт гражданина СССР",
+            "docCode": 2,
+            "docNum": 8,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 7,
+            "docName": "Справка об освобождении из места лишения свободы",
+            "docCode": 5,
+            "docNum": 9,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 8,
+            "docName": "Дипломатический паспорт гражданина РФ",
+            "docCode": 9,
+            "docNum": 10,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 9,
+            "docName": "Иностранный паспорт",
+            "docCode": 10,
+            "docNum": 11,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 10,
+            "docName": "Военный билет офицера запаса",
+            "docCode": 27,
+            "docNum": 16,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 11,
+            "docName": "Иные документы, выдаваемые органами МВД",
+            "docCode": 91,
+            "docNum": 18,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 12,
+            "docName": "Паспорт гражданина Казахстана",
+            "docCode": 11,
+            "docNum": 101,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 13,
+            "docName": "Паспорт гражданина Узбекистана",
+            "docCode": 12,
+            "docNum": 102,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 14,
+            "docName": "Паспорт гражданина РФ",
+            "docCode": 13,
+            "docNum": 103,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 15,
+            "docName": "Паспорт гражданина Таджикистана",
+            "docCode": 14,
+            "docNum": 104,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 16,
+            "docName": "Паспорт гражданина КНР",
+            "docCode": 15,
+            "docNum": 105,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 17,
+            "docName": "Паспорт гражданина СССР",
+            "docCode": 16,
+            "docNum": 106,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 18,
+            "docName": "Загранпаспорт гражданина Казахстана",
+            "docCode": 21,
+            "docNum": 121,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 19,
+            "docName": "Загранпаспорт гражданина Узбекистана",
+            "docCode": 22,
+            "docNum": 122,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 20,
+            "docName": "Загранпаспорт гражданина РФ",
+            "docCode": 23,
+            "docNum": 123,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 21,
+            "docName": "Загранпаспорт гражданина Таджикистана",
+            "docCode": 24,
+            "docNum": 124,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 22,
+            "docName": "Загранпаспорт гражданина КНР",
+            "docCode": 25,
+            "docNum": 125,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 23,
+            "docName": "Загранпаспорт гражданина СССР",
+            "docCode": 26,
+            "docNum": 126,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 24,
+            "docName": "Паспорт иностранного гражданина",
+            "docCode": 41,
+            "docNum": 141,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": true,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 25,
+            "docName": "Дипломатический паспорт",
+            "docCode": 42,
+            "docNum": 142,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 26,
+            "docName": "Загранпаспорт гражданина КР",
+            "docCode": 43,
+            "docNum": 143,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": true,
+            "isResident": true,
+            "sortOrder": null
+        },
+        {
+            "id": 27,
+            "docName": "Удостоверение личности",
+            "docCode": 44,
+            "docNum": 144,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 28,
+            "docName": "Временное удостоверение личности",
+            "docCode": 45,
+            "docNum": 145,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 29,
+            "docName": "Свидетельство о рождении",
+            "docCode": 46,
+            "docNum": 146,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": true,
+            "isResident": true,
+            "sortOrder": null
+        },
+        {
+            "id": 30,
+            "docName": "Вид на жительство в КР",
+            "docCode": 47,
+            "docNum": 147,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": true,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 31,
+            "docName": "Удостоверение беженца",
+            "docCode": 48,
+            "docNum": 148,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": true,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 32,
+            "docName": "Свидетельство о регистрации ходатайства иммигранта",
+            "docCode": 49,
+            "docNum": 149,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 33,
+            "docName": "Справка об освобождении из мест лишения свободы",
+            "docCode": 50,
+            "docNum": 150,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 34,
+            "docName": "Справка об утере паспорта",
+            "docCode": 51,
+            "docNum": 151,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 35,
+            "docName": "Иные документы, выдаваемые органами МВД",
+            "docCode": 52,
+            "docNum": 152,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 36,
+            "docName": "Свидетельство Департамента миграционной службы при МИД",
+            "docCode": 53,
+            "docNum": 153,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 37,
+            "docName": "Свидетельство регистрации",
+            "docCode": 54,
+            "docNum": 154,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 38,
+            "docName": "ID-карта",
+            "docCode": 55,
+            "docNum": 155,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 54,
+            "docName": "СВИДРЕГИСТ",
+            "docCode": null,
+            "docNum": 101,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": true,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 55,
+            "docName": "ПАТЕНТ",
+            "docCode": null,
+            "docNum": 102,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": true,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 56,
+            "docName": "РЕГСОЦФОНД",
+            "docCode": null,
+            "docNum": 104,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": true,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 58,
+            "docName": "СвидПерег",
+            "docCode": null,
+            "docNum": 106,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": true,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 59,
+            "docName": "СТАТКАРТА",
+            "docCode": null,
+            "docNum": 107,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": true,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 44,
+            "docName": "ИНЫЕ",
+            "docCode": null,
+            "docNum": 18,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 43,
+            "docName": "СВУЧЕТ",
+            "docCode": null,
+            "docNum": 14,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 60,
+            "docName": "СВГОСРЕГКР",
+            "docCode": null,
+            "docNum": 109,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": true,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 61,
+            "docName": "Водительское удостоверение",
+            "docCode": 57,
+            "docNum": 157,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": true,
+            "isResident": true,
+            "sortOrder": null
+        },
+        {
+            "id": 39,
+            "docName": "Вид на жительство в США/Green Card",
+            "docCode": 56,
+            "docNum": 156,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 1,
+                "type": "I",
+                "name": "Физическое лицо"
+            },
+            "visible": true,
+            "isResident": null,
+            "sortOrder": null
+        },
+        {
+            "id": 40,
+            "docName": "ВИЗА",
+            "docCode": null,
+            "docNum": 1,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 47,
+            "docName": "ЛИЦДИЛ",
+            "docCode": null,
+            "docNum": 23,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 42,
+            "docName": "СВГОСРЕГ",
+            "docCode": null,
+            "docNum": 4,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 41,
+            "docName": "РЕГНОМ",
+            "docCode": null,
+            "docNum": 2,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 51,
+            "docName": "ВОДУДСТ",
+            "docCode": null,
+            "docNum": 28,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 48,
+            "docName": "ЛИЦДОВУП",
+            "docCode": null,
+            "docNum": 25,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 45,
+            "docName": "ЛИЦБР",
+            "docCode": null,
+            "docNum": 21,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 50,
+            "docName": "АККРЕД",
+            "docCode": null,
+            "docNum": 27,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 49,
+            "docName": "РНРГТМ",
+            "docCode": null,
+            "docNum": 26,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 52,
+            "docName": "ПЕНСУДСТ",
+            "docCode": null,
+            "docNum": 29,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 53,
+            "docName": "СТРСВИД",
+            "docCode": null,
+            "docNum": 30,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 57,
+            "docName": "EFEEКОНТР",
+            "docCode": null,
+            "docNum": 105,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        },
+        {
+            "id": 46,
+            "docName": "ЛИЦБРФЛ",
+            "docCode": null,
+            "docNum": 22,
+            "clientTypeId": null,
+            "clientType": {
+                "id": 2,
+                "type": "L",
+                "name": "Юридическое лицо"
+            },
+            "visible": false,
+            "isResident": false,
+            "sortOrder": null
+        }
+    ],
+    "message": "Типы документов"
+}

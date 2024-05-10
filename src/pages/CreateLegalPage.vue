@@ -3,50 +3,39 @@
         <div class="q-pa-md">
             <q-stepper v-model="step" ref="stepper" color="primary" animated>
                 <q-step :name="1" title="Основные данные" :done="step > 1" active-color="orange" done-color="positive">
-                    <q-expansion-item label="Данные физ. лица" header-class="bg-grey-4 text-black text-bold"
+                    <q-expansion-item label="Данные юр. лица" header-class="bg-grey-4 text-black text-bold"
                         default-opened>
-                        <q-form ref="individualForm" class="q-mt-md" greedy>
-                            <div class="row q-col-gutter-sm q-pb-sm">
-                                <q-input v-model="individual.lastName" label="Фамилия" outlined dense
-                                    class="col-12 col-sm-4" counter :maxlength="maxLength"
+                        <q-form ref="legalForm" class="q-mt-md" greedy>
+                            <div class="row q-col-gutter-sm q-pb-sm ">
+                                <q-input v-model="legal.fullName" label="Наименование" outlined dense
+                                    class="col-12 col-sm-4" counter :maxlength="140"
                                     :rules="[validateName, validateRequired]"></q-input>
-                                <q-input v-model="individual.firstName" label="Имя" outlined dense
-                                    class="col-12 col-sm-4" counter :maxlength="maxLength"
+                                <q-input v-model="legal.fullNameKg" label="Наименование (кыргызский)" outlined dense
+                                    class="col-12 col-sm-4" counter :maxlength="140"
                                     :rules="[validateName, validateRequired]"></q-input>
-                                <q-input v-model="individual.secondName" label="Отчество" outlined dense
-                                    class="col-12 col-sm-4" counter :maxlength="maxLength"
-                                    :rules="[validateName, validateRequired]"></q-input>
-                            </div>
-                            <div class="row q-col-gutter-sm q-pb-sm">
-                                <q-input v-model="individual.lastNameLat" label="Фамилия(латиницей)" outlined dense
-                                    class="col-12 col-sm-4" :rules="[validateNameLat, validateRequired]"></q-input>
-                                <q-input v-model="individual.firstNameLat" label="Имя(латиницей)" outlined dense
-                                    class="col-12 col-sm-4" :rules="[validateNameLat, validateRequired]"></q-input>
-                                <q-input v-model="individual.internationalName" label="Полное имя(латиницей)" outlined
-                                    dense class="col-12 col-sm-4"
+                                <q-input v-model="legal.internationalName" label="Наименование (латиницей)" outlined dense
+                                    class="col-12 col-sm-4" counter :maxlength="140"
                                     :rules="[validateNameLat, validateRequired]"></q-input>
                             </div>
                             <div class="row q-col-gutter-sm q-pb-sm">
-                                <q-input v-model="individual.birthDate" label="Дата рождения" class="col-12 col-sm-3"
-                                    type="date" outlined dense :rules="[validateDate, validateRequired]"></q-input>
-                                <q-select v-model="individual.isMale" label="Пол" class="col-12 col-sm-3" outlined dense
-                                    :options="genderOptions" :rules="[validateRequiredBirthDate]" emit-value
-                                    map-options></q-select>
-                                <q-select v-model="individual.maritalStatus" label="Семейное положение"
-                                    class="col-12 col-sm-3" outlined dense :options="maritalStatusOptions"
-                                    :rules="[validateRequired]" emit-value map-options></q-select>
-                                <q-select v-model="individual.nationality" label="Национальность"
-                                    class="col-12 col-sm-3" outlined dense :options="nationalities"
-                                    option-label="nationality" option-value="id" :rules="[validateRequired]" emit-value
-                                    map-options></q-select>
+                                <q-input v-model="legal.shortName" label="Сокращенное наименование" outlined
+                                    dense class="col-12 col-sm-4" :rules="[validateRequired]"
+                                    :maxlength="70"></q-input>
+                                <q-input v-model="legal.shortNameKg"
+                                    label="Сокращенное наименование на кыргызском" outlined dense
+                                    class="col-12 col-sm-4" :rules="[validateShortNameKg, validateRequired]"
+                                    :maxlength="70"></q-input>
+                                <q-input v-model="legal.shortNameLat"
+                                    label="Сокращенное наименование латиницей" outlined dense class="col-12 col-sm-4"
+                                    :rules="[validateShortNameLatin, validateRequired]" :maxlength="70"></q-input>
                             </div>
                             <div class="row q-col-gutter-sm q-pb-sm">
-                                <q-input v-model="individual.workPlace" label="Место работы" outlined dense
+                                <q-input v-model="legal.okpoCode" label="Код ОКПО" outlined dense
                                     class="col-12 col-sm-4" :disable="workPlaceDisable" counter
-                                    :maxlength="100"></q-input>
-                                <div>
-                                    <q-checkbox v-model="individual.isOptimaEmployee" label="Сотрудник банка" />
-                                </div>
+                                    :maxlength="8" :rules="[validateRequired]"></q-input>
+                                <q-input v-model="legal.socialFund" label="Регистрационный номер соц.фонда" outlined
+                                    dense class="col-12 col-sm-4" :disable="workPlaceDisable" counter
+                                    :maxlength="14" :rules="[validateRequired]"></q-input>
 
                             </div>
                         </q-form>
@@ -73,7 +62,8 @@
                                 <div class="row q-col-gutter-sm q-pb-sm ">
                                     <q-select v-model="contact.contactType" class="col-12 col-sm-3" label="Тип контакта"
                                         :rules="[validateRequired]" :options="contactTypeOptions" outlined emit-value
-                                        map-options dense></q-select>
+                                        map-options
+                                        dense></q-select>
                                     <q-input v-model="contact.contact" class="col-12 col-sm-3" label="Контакт" dense
                                         outlined :rules="[validateRequired]"></q-input>
                                     <div class="col-12 col-sm-3" v-if="isDeleteContact">
@@ -101,8 +91,7 @@
                                 <div class="row q-col-gutter-sm q-my-sm">
                                     <q-select v-model="document.documentType" class="col-12 col-sm-3"
                                         label="Тип документа" dense outlined :options="documentTypeOptions"
-                                        option-label="docName" option-value="id" emit-value map-options
-                                        :rules="[validateRequired]"></q-select>
+                                        option-label="docName" option-value="id" emit-value map-options :rules="[validateRequired]"></q-select>
                                     <q-input v-model="document.series" class="col-12 col-sm-3" label="Серия" dense
                                         outlined :rules="[validateRequired]"></q-input>
                                     <q-input v-model="document.docNumber" class="col-12 col-sm-3" label="Номер" dense
@@ -187,25 +176,18 @@
 </template>
 <script setup>
 import { computed, reactive, ref, watch } from 'vue';
-import { useQuasar } from 'quasar'
-import nationality from '../json/nationality.json'
 import documentTypes from '../json/documentTypes.json'
 import areas from '../json/areas.json'
 import addressCode from '../json/addressCode.json'
 import { cyrillicToLatin } from 'src/utils/transliteration';
-import { validateBirthDate } from 'src/utils/validates';
-import { parseINN } from 'src/utils/inn';
-import { createAddress, createDocument, createIndividual, createNote, createSubject, createContact } from 'src/services';
-import { useRouter } from 'vue-router';
+import { createAddress, createDocument, createLegal, createNote, createSubject, createContact } from 'src/services';
 
-const router = useRouter()
 
 //data
 const step = ref(1);
-const maxLength = ref(24);
 
 //refs
-const individualForm = ref(null);
+const legalForm = ref(null);
 const subjectForm = ref(null);
 const contactForm = ref(null);
 const documentForm = ref(null);
@@ -213,31 +195,9 @@ const addressForm = ref(null);
 const noteForm = ref(null);
 const stepper = ref(null);
 //options
-const genderOptions = reactive([
-    { label: 'М', value: true },
-    { label: 'Ж', value: false },
-]);
-
-const MaritalStatuses = {
-    NONE: 'NONE',
-    MARRIED: 'MARRIED',
-    DIVORCED: 'DIVORCED',
-    IDLE: 'IDLE',
-    WIDOWED: 'WIDOWED',
-}
-
-const nationalities = reactive(nationality.data)
-
-const maritalStatusOptions = reactive([
-    { label: 'Не указано', value: MaritalStatuses.NONE },
-    { label: 'Разведён/Разведена', value: MaritalStatuses.DIVORCED },
-    { label: 'Не женат/Не замужем', value: MaritalStatuses.IDLE },
-    { label: 'Женат/Замужем', value: MaritalStatuses.MARRIED },
-    { label: 'Вдовец/Вдова', value: MaritalStatuses.WIDOWED },
-]);
 
 const clientTypeOptions = reactive([
-    { label: 'Физическое лицо', value: 'individual' }
+    { label: 'Юридическое лицо', value: 'legal' }
 ])
 
 const addressTypeOptions = reactive([
@@ -267,27 +227,23 @@ const contactTypeOptions = reactive([
     },
 ])
 
-const documentTypeOptions = reactive(documentTypes.data.filter((document) => document.clientType.type == 'I'))
+const documentTypeOptions = reactive(documentTypes.data.filter((document) => document.clientType.type == 'L'))
 
-const individual = reactive({
-    lastName: '',
-    firstName: '',
-    secondName: '',
-    firstNameLat: '',
-    lastNameLat: '',
+const legal = reactive({
+    fullName: '',
+    fullNameKg: '',
     internationalName: '',
-    workPlace: '',
-    birthDate: '',
-    isMale: null,
-    maritalStatus: '',
-    nationality: '',
-    isOptimaEmployee: false
+    shortName: '',
+    shortNameKg: '',
+    shortNameLat: '',
+    okpoCode: '',
+    socialFund: ''
 })
 
 const workPlaceDisable = ref(false);
 
 const subject = reactive({
-    clientType: 'individual',
+    clientType: 'legal',
     inn: ''
 });
 
@@ -326,26 +282,8 @@ const note = reactive({
 })
 
 
-watch(() => individual.isOptimaEmployee, (value) => {
-    if (value) {
-        individual.workPlace = 'Сотрудник банка';
-        individual.isOptimaEmployee = true;
-        workPlaceDisable.value = true
-    } else {
-        individual.workPlace = '';
-        individual.isOptimaEmployee = false;
-        workPlaceDisable.value = false
-    }
-});
-
-watch(() => individual.lastName, (value) => {
-    individual.lastNameLat = cyrillicToLatin(value);
-    individual.internationalName = `${individual.lastNameLat} ${individual.firstNameLat}`
-})
-
-watch(() => individual.firstName, (value) => {
-    individual.firstNameLat = cyrillicToLatin(value);
-    individual.internationalName = `${individual.lastNameLat} ${individual.firstNameLat}`
+watch(() => legal.shortName, (value) => {
+    legal.shortNameLat = cyrillicToLatin(value);
 })
 
 const isDeleteContact = computed(() => contacts.length > 1);
@@ -353,10 +291,6 @@ const isDeleteDocument = computed(() => documents.length > 1);
 
 const validateRequired = (value) => {
     return !!value || 'Поле обязательно для заполнения';
-}
-
-const validateRequiredBirthDate = (value) => {
-    return value !== null || 'Поле обязательно для заполнения';
 }
 
 const validateName = (value) => {
@@ -375,26 +309,35 @@ const validateNameLat = (value) => {
     return !rule.test(value) || 'Разрешенные символы: -, пробелы, латиница и точка';
 }
 
-const validateDate = (date) => {
-    return validateBirthDate(date)
+const validateShortNameLatin = (shortNameLatin) => {
+    if (!shortNameLatin) {
+        return true;
+    }
+
+    if (shortNameLatin.length > 22) {
+        return 'Сократите наименование до 22х символов';
+    }
+
+    const rule = /[\d/\sa-zA-Z-]/g;
+    const isValid = shortNameLatin.split('').every((letter) => letter.match(rule));
+
+    return isValid || 'Разрешенные символы: латиница, числа и -';
 }
 
-const validateINN = (inn) => {
-    try {
-        const parsedInn = parseINN(inn);
-        console.log(parsedInn.isMale, individual.isMale)
-        if (typeof individual.isMale === 'boolean' && individual.isMale !== parsedInn.isMale) {
-            return 'Несоответствие ИНН и указанного пола';
-        }
-
-        if (individual.birthDate && parsedInn.birthDate.format('YYYY-MM-DD') !== individual.birthDate) {
-            return 'Несоответствие ИНН и даты рождения';
-        }
-
+const validateShortNameKg = (shortNameKg) => {
+    if (!shortNameKg) {
         return true;
-    } catch (e) {
-        return e.message
     }
+
+    if (shortNameKg.length > 36) {
+        return 'Сократите наименование до 33х символов';
+    }
+
+    const rule = /[\d/\sа-яА-Яa-zA-ZёЁңҢөӨүҮ"-]/g;
+
+    const isValid = shortNameKg.split('').every((letter) => letter.match(rule));
+
+    return isValid || 'Разрешенные символы: кириллица и (ө,Ң,ү), числа и -';
 }
 
 const addContact = () => {
@@ -422,29 +365,26 @@ const addDocument = () => {
 const removeDocument = (index) => {
     documents.splice(index, 1)
 }
-const $q = useQuasar()
+
 const stepperClick = async () => {
-    // stepper.value.next()
     if (step.value == 1) {
-        const individualValidated = await individualForm.value.validate();
+        const individualValidated = await legalForm.value.validate();
         const subjectValidated = await subjectForm.value.validate();
         const contactValidated = await contactForm.value.validate();
-
+    
         if (individualValidated && subjectValidated && contactValidated) stepper.value.next()
     }
 
     if (step.value == 2) {
         const documentValidated = await documentForm.value.validate()
-       
-        if (documentValidated) stepper.value.next()
+        if(documentValidated) stepper.value.next()
 
         // stepper.value.next()
     }
 
     if (step.value == 3) {
-        const addressValidated = await addressForm.value.validate();
-     
-        if (addressValidated) stepper.value.next()
+        const addressValidated = await addressForm.value.validate()
+        if(addressValidated) stepper.value.next()
 
         // stepper.value.next()
     }
@@ -453,8 +393,8 @@ const stepperClick = async () => {
         const noteValidated = await noteForm.value.validate();
         if (noteValidated) {
             const subjectResponse = await createSubject(subject).then(async (response) => {
-                const individualData = await createIndividual({
-                    ...individual,
+                const legalData = await createLegal({
+                    ...legal,
                     subjectId: response.data.id,
                 })
                 const contactData = contacts.map((contact) => ({ ...contact, subjectId: response.data.id }));

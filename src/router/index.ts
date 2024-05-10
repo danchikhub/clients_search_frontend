@@ -21,10 +21,8 @@ export default route(function () {
 
   Router.beforeEach((to, from, next) => {
     const isAuthenticated = !!localStorage.getItem('token');
-    console.log(isAuthenticated);
     
     if(!isAuthenticated && to.path !== '/login') {
-      console.log('true')
       next('/login');
     }else{
       next();

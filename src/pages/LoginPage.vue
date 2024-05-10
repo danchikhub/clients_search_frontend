@@ -34,12 +34,12 @@
                         </div>
 
                         <q-form ref="form" class="q-gutter-md" @submit="submit">
-                          <q-input v-model="user.email" label="Email" name="Email" required />
+                          <q-input v-model="user.email" label="Логин" name="Email" required />
 
-                          <q-input v-model="user.password" label="Password" name="password" type="password" required />
+                          <q-input v-model="user.password" label="Пароль" name="password" type="password" required />
 
                           <div>
-                            <q-btn class="full-width fredoka" color="primary" label="Login" rounded
+                            <q-btn class="full-width fredoka" color="primary" label="Войти" rounded
                               type="submit"></q-btn>
                           </div>
                         </q-form>

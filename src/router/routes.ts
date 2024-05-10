@@ -11,9 +11,18 @@ const routes: RouteRecordRaw[] = [
         component: () => import('pages/SearchPage.vue')
       },
       {
-        path: 'create',
+        path: 'create/individual',
         component: () => import('pages/CreateClientPage.vue')
+      },
+      {
+        path: 'create/legal',
+        component: () => import('pages/CreateLegalPage.vue')
+      },
+      {
+        path: 'client-details',
+        component: () => import('pages/ClientDetail.vue')
       }
+
     ]
   },
   {

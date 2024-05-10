@@ -1,0 +1,1120 @@
+{
+    "data": [
+        {
+            "id": 114,
+            "nationality": "Кыргыз",
+            "sortOrder": 0
+        },
+        {
+            "id": 1,
+            "nationality": "Австралиец",
+            "sortOrder": 1
+        },
+        {
+            "id": 2,
+            "nationality": "Австриец",
+            "sortOrder": 2
+        },
+        {
+            "id": 3,
+            "nationality": "Азербайджанец",
+            "sortOrder": 3
+        },
+        {
+            "id": 4,
+            "nationality": "Албанец",
+            "sortOrder": 4
+        },
+        {
+            "id": 5,
+            "nationality": "Алжирец",
+            "sortOrder": 5
+        },
+        {
+            "id": 6,
+            "nationality": "Американец",
+            "sortOrder": 6
+        },
+        {
+            "id": 7,
+            "nationality": "Ангильец",
+            "sortOrder": 7
+        },
+        {
+            "id": 8,
+            "nationality": "Англичанин",
+            "sortOrder": 8
+        },
+        {
+            "id": 9,
+            "nationality": "Ангольец",
+            "sortOrder": 9
+        },
+        {
+            "id": 10,
+            "nationality": "Андорра",
+            "sortOrder": 10
+        },
+        {
+            "id": 11,
+            "nationality": "Аргентинец",
+            "sortOrder": 11
+        },
+        {
+            "id": 12,
+            "nationality": "Армянин",
+            "sortOrder": 12
+        },
+        {
+            "id": 13,
+            "nationality": "Афганец",
+            "sortOrder": 13
+        },
+        {
+            "id": 92,
+            "nationality": "Балкарец",
+            "sortOrder": 14
+        },
+        {
+            "id": 14,
+            "nationality": "Бангладешец",
+            "sortOrder": 15
+        },
+        {
+            "id": 15,
+            "nationality": "Барбадосец",
+            "sortOrder": 16
+        },
+        {
+            "id": 16,
+            "nationality": "Бахрейн",
+            "sortOrder": 17
+        },
+        {
+            "id": 17,
+            "nationality": "Белиз",
+            "sortOrder": 18
+        },
+        {
+            "id": 18,
+            "nationality": "Белорус",
+            "sortOrder": 19
+        },
+        {
+            "id": 19,
+            "nationality": "Бельгиец",
+            "sortOrder": 20
+        },
+        {
+            "id": 20,
+            "nationality": "Бенинец",
+            "sortOrder": 21
+        },
+        {
+            "id": 21,
+            "nationality": "Бермудец",
+            "sortOrder": 22
+        },
+        {
+            "id": 22,
+            "nationality": "Бирманец",
+            "sortOrder": 23
+        },
+        {
+            "id": 23,
+            "nationality": "Боливиец",
+            "sortOrder": 24
+        },
+        {
+            "id": 24,
+            "nationality": "Ботсванец",
+            "sortOrder": 25
+        },
+        {
+            "id": 25,
+            "nationality": "Бразильец",
+            "sortOrder": 26
+        },
+        {
+            "id": 26,
+            "nationality": "Британец",
+            "sortOrder": 27
+        },
+        {
+            "id": 27,
+            "nationality": "Брунеец",
+            "sortOrder": 28
+        },
+        {
+            "id": 28,
+            "nationality": "Буркинан",
+            "sortOrder": 29
+        },
+        {
+            "id": 29,
+            "nationality": "Бурундиец",
+            "sortOrder": 30
+        },
+        {
+            "id": 30,
+            "nationality": "Бутанец",
+            "sortOrder": 31
+        },
+        {
+            "id": 31,
+            "nationality": "Валлиец",
+            "sortOrder": 32
+        },
+        {
+            "id": 32,
+            "nationality": "Венгр",
+            "sortOrder": 33
+        },
+        {
+            "id": 33,
+            "nationality": "Венесуэльец",
+            "sortOrder": 34
+        },
+        {
+            "id": 34,
+            "nationality": "Винсентианец",
+            "sortOrder": 35
+        },
+        {
+            "id": 35,
+            "nationality": "Вьетнамец",
+            "sortOrder": 36
+        },
+        {
+            "id": 36,
+            "nationality": "Габонец",
+            "sortOrder": 37
+        },
+        {
+            "id": 37,
+            "nationality": "Гаитянец",
+            "sortOrder": 38
+        },
+        {
+            "id": 38,
+            "nationality": "Гайанец",
+            "sortOrder": 39
+        },
+        {
+            "id": 39,
+            "nationality": "Гамбиец",
+            "sortOrder": 40
+        },
+        {
+            "id": 40,
+            "nationality": "Ганец",
+            "sortOrder": 41
+        },
+        {
+            "id": 41,
+            "nationality": "Гватемальец",
+            "sortOrder": 42
+        },
+        {
+            "id": 42,
+            "nationality": "Гвинеец",
+            "sortOrder": 43
+        },
+        {
+            "id": 43,
+            "nationality": "Гибралтарец",
+            "sortOrder": 44
+        },
+        {
+            "id": 44,
+            "nationality": "Гражданин Антигуа и Барбуды",
+            "sortOrder": 45
+        },
+        {
+            "id": 45,
+            "nationality": "Гражданин Багамских Островов",
+            "sortOrder": 46
+        },
+        {
+            "id": 46,
+            "nationality": "Гражданин Болгарии",
+            "sortOrder": 47
+        },
+        {
+            "id": 47,
+            "nationality": "Гражданин Боснии и Герцеговины",
+            "sortOrder": 48
+        },
+        {
+            "id": 48,
+            "nationality": "Гражданин Вануату",
+            "sortOrder": 49
+        },
+        {
+            "id": 49,
+            "nationality": "Гражданин Ватикана",
+            "sortOrder": 50
+        },
+        {
+            "id": 50,
+            "nationality": "Гражданин Гвинеи-Бисау",
+            "sortOrder": 51
+        },
+        {
+            "id": 51,
+            "nationality": "Гражданин Гондураса",
+            "sortOrder": 52
+        },
+        {
+            "id": 52,
+            "nationality": "Гражданин Гонконга",
+            "sortOrder": 53
+        },
+        {
+            "id": 53,
+            "nationality": "Гражданин Гуама",
+            "sortOrder": 54
+        },
+        {
+            "id": 54,
+            "nationality": "Гражданин Доминиканской Республики",
+            "sortOrder": 55
+        },
+        {
+            "id": 55,
+            "nationality": "Гражданин Йемена",
+            "sortOrder": 56
+        },
+        {
+            "id": 56,
+            "nationality": "Гражданин Кирибати",
+            "sortOrder": 57
+        },
+        {
+            "id": 57,
+            "nationality": "Гражданин Конго",
+            "sortOrder": 58
+        },
+        {
+            "id": 58,
+            "nationality": "Гражданин Латвии",
+            "sortOrder": 59
+        },
+        {
+            "id": 59,
+            "nationality": "Гражданин Лихтенштейна",
+            "sortOrder": 60
+        },
+        {
+            "id": 60,
+            "nationality": "Гражданин Монако",
+            "sortOrder": 61
+        },
+        {
+            "id": 61,
+            "nationality": "Гражданин ОАЭ",
+            "sortOrder": 62
+        },
+        {
+            "id": 62,
+            "nationality": "Гражданин Сейшельских островов",
+            "sortOrder": 63
+        },
+        {
+            "id": 63,
+            "nationality": "Гражданин Сингапура",
+            "sortOrder": 64
+        },
+        {
+            "id": 64,
+            "nationality": "Гражданин Сьерра-Леоне",
+            "sortOrder": 65
+        },
+        {
+            "id": 65,
+            "nationality": "Гражданин Швейцарии",
+            "sortOrder": 66
+        },
+        {
+            "id": 66,
+            "nationality": "Гражданин Эквадора",
+            "sortOrder": 67
+        },
+        {
+            "id": 67,
+            "nationality": "Гражданин Экваториальной Гвинеи",
+            "sortOrder": 68
+        },
+        {
+            "id": 68,
+            "nationality": "Грек",
+            "sortOrder": 69
+        },
+        {
+            "id": 69,
+            "nationality": "Гренадец",
+            "sortOrder": 70
+        },
+        {
+            "id": 70,
+            "nationality": "Гренландец",
+            "sortOrder": 71
+        },
+        {
+            "id": 71,
+            "nationality": "Грузин",
+            "sortOrder": 72
+        },
+        {
+            "id": 72,
+            "nationality": "Датчанин",
+            "sortOrder": 73
+        },
+        {
+            "id": 212,
+            "nationality": "Дагестанец",
+            "sortOrder": 73
+        },
+        {
+            "id": 73,
+            "nationality": "Джибути",
+            "sortOrder": 74
+        },
+        {
+            "id": 74,
+            "nationality": "Доминиканец",
+            "sortOrder": 75
+        },
+        {
+            "id": 75,
+            "nationality": "Дунганин",
+            "sortOrder": 76
+        },
+        {
+            "id": 76,
+            "nationality": "Еврей",
+            "sortOrder": 77
+        },
+        {
+            "id": 77,
+            "nationality": "Египтянин",
+            "sortOrder": 78
+        },
+        {
+            "id": 78,
+            "nationality": "Житель Британских Виргинских островов",
+            "sortOrder": 79
+        },
+        {
+            "id": 79,
+            "nationality": "Житель острова Питкэрн",
+            "sortOrder": 80
+        },
+        {
+            "id": 80,
+            "nationality": "Житель островов Теркс и Кайкос",
+            "sortOrder": 81
+        },
+        {
+            "id": 81,
+            "nationality": "Житель Соломоновых островов",
+            "sortOrder": 82
+        },
+        {
+            "id": 82,
+            "nationality": "Замбиец",
+            "sortOrder": 83
+        },
+        {
+            "id": 83,
+            "nationality": "Зимбабвиец",
+            "sortOrder": 84
+        },
+        {
+            "id": 84,
+            "nationality": "Ивуариец",
+            "sortOrder": 85
+        },
+        {
+            "id": 85,
+            "nationality": "Израильтянин",
+            "sortOrder": 86
+        },
+        {
+            "id": 86,
+            "nationality": "Индиец",
+            "sortOrder": 87
+        },
+        {
+            "id": 87,
+            "nationality": "Индонезиец",
+            "sortOrder": 88
+        },
+        {
+            "id": 88,
+            "nationality": "Иорданец",
+            "sortOrder": 89
+        },
+        {
+            "id": 89,
+            "nationality": "Иракец",
+            "sortOrder": 90
+        },
+        {
+            "id": 90,
+            "nationality": "Иранец",
+            "sortOrder": 91
+        },
+        {
+            "id": 91,
+            "nationality": "Ирландец",
+            "sortOrder": 92
+        },
+        {
+            "id": 93,
+            "nationality": "Исландец",
+            "sortOrder": 93
+        },
+        {
+            "id": 94,
+            "nationality": "Испанец",
+            "sortOrder": 94
+        },
+        {
+            "id": 95,
+            "nationality": "Итальянец",
+            "sortOrder": 95
+        },
+        {
+            "id": 96,
+            "nationality": "Казах",
+            "sortOrder": 96
+        },
+        {
+            "id": 97,
+            "nationality": "Каймановы острова",
+            "sortOrder": 97
+        },
+        {
+            "id": 98,
+            "nationality": "Камбоджиец",
+            "sortOrder": 98
+        },
+        {
+            "id": 99,
+            "nationality": "Камерунец",
+            "sortOrder": 99
+        },
+        {
+            "id": 100,
+            "nationality": "Канадец",
+            "sortOrder": 100
+        },
+        {
+            "id": 101,
+            "nationality": "Катар",
+            "sortOrder": 101
+        },
+        {
+            "id": 102,
+            "nationality": "Кениец",
+            "sortOrder": 102
+        },
+        {
+            "id": 103,
+            "nationality": "Киприот",
+            "sortOrder": 103
+        },
+        {
+            "id": 104,
+            "nationality": "Китаец",
+            "sortOrder": 104
+        },
+        {
+            "id": 105,
+            "nationality": "Киттианец",
+            "sortOrder": 105
+        },
+        {
+            "id": 106,
+            "nationality": "Колумбиец",
+            "sortOrder": 106
+        },
+        {
+            "id": 107,
+            "nationality": "Комора",
+            "sortOrder": 107
+        },
+        {
+            "id": 108,
+            "nationality": "Кореец",
+            "sortOrder": 108
+        },
+        {
+            "id": 109,
+            "nationality": "Косовец",
+            "sortOrder": 109
+        },
+        {
+            "id": 110,
+            "nationality": "Коста-Риканец",
+            "sortOrder": 110
+        },
+        {
+            "id": 111,
+            "nationality": "Кубинец",
+            "sortOrder": 111
+        },
+        {
+            "id": 112,
+            "nationality": "Кувейт",
+            "sortOrder": 112
+        },
+        {
+            "id": 113,
+            "nationality": "Курд",
+            "sortOrder": 113
+        },
+        {
+            "id": 115,
+            "nationality": "Лаосец",
+            "sortOrder": 114
+        },
+        {
+            "id": 213,
+            "nationality": "Лезгин",
+            "sortOrder": 115
+        },
+        {
+            "id": 116,
+            "nationality": "Либериец",
+            "sortOrder": 115
+        },
+        {
+            "id": 117,
+            "nationality": "Ливанец",
+            "sortOrder": 116
+        },
+        {
+            "id": 118,
+            "nationality": "Ливиец",
+            "sortOrder": 117
+        },
+        {
+            "id": 119,
+            "nationality": "Литовец",
+            "sortOrder": 118
+        },
+        {
+            "id": 120,
+            "nationality": "Люксембуржец",
+            "sortOrder": 119
+        },
+        {
+            "id": 121,
+            "nationality": "Мавританец",
+            "sortOrder": 120
+        },
+        {
+            "id": 122,
+            "nationality": "Македонец",
+            "sortOrder": 121
+        },
+        {
+            "id": 123,
+            "nationality": "Малавиец",
+            "sortOrder": 122
+        },
+        {
+            "id": 124,
+            "nationality": "Малагасиец",
+            "sortOrder": 123
+        },
+        {
+            "id": 125,
+            "nationality": "Малазиец",
+            "sortOrder": 124
+        },
+        {
+            "id": 126,
+            "nationality": "Малиец",
+            "sortOrder": 125
+        },
+        {
+            "id": 127,
+            "nationality": "Мальдивец",
+            "sortOrder": 126
+        },
+        {
+            "id": 128,
+            "nationality": "Мальтиец",
+            "sortOrder": 127
+        },
+        {
+            "id": 129,
+            "nationality": "Марокканец",
+            "sortOrder": 128
+        },
+        {
+            "id": 130,
+            "nationality": "Маршалльец",
+            "sortOrder": 129
+        },
+        {
+            "id": 131,
+            "nationality": "Мексиканец",
+            "sortOrder": 130
+        },
+        {
+            "id": 132,
+            "nationality": "Микронезиец",
+            "sortOrder": 131
+        },
+        {
+            "id": 133,
+            "nationality": "Мозамбикец",
+            "sortOrder": 132
+        },
+        {
+            "id": 134,
+            "nationality": "Молдаванин",
+            "sortOrder": 133
+        },
+        {
+            "id": 135,
+            "nationality": "Монгол",
+            "sortOrder": 134
+        },
+        {
+            "id": 136,
+            "nationality": "Мосото",
+            "sortOrder": 135
+        },
+        {
+            "id": 137,
+            "nationality": "Намибиец",
+            "sortOrder": 136
+        },
+        {
+            "id": 138,
+            "nationality": "Науруанец",
+            "sortOrder": 137
+        },
+        {
+            "id": 139,
+            "nationality": "Немец",
+            "sortOrder": 138
+        },
+        {
+            "id": 140,
+            "nationality": "Непальец",
+            "sortOrder": 139
+        },
+        {
+            "id": 141,
+            "nationality": "Нигериец",
+            "sortOrder": 140
+        },
+        {
+            "id": 142,
+            "nationality": "Нидерландец",
+            "sortOrder": 141
+        },
+        {
+            "id": 143,
+            "nationality": "Никарагуанец",
+            "sortOrder": 142
+        },
+        {
+            "id": 144,
+            "nationality": "Ниуэ",
+            "sortOrder": 143
+        },
+        {
+            "id": 145,
+            "nationality": "Новозеландец",
+            "sortOrder": 144
+        },
+        {
+            "id": 146,
+            "nationality": "Норвежец",
+            "sortOrder": 145
+        },
+        {
+            "id": 147,
+            "nationality": "Оманец",
+            "sortOrder": 146
+        },
+        {
+            "id": 148,
+            "nationality": "Островитянин Кука",
+            "sortOrder": 147
+        },
+        {
+            "id": 149,
+            "nationality": "Пакистанец",
+            "sortOrder": 148
+        },
+        {
+            "id": 150,
+            "nationality": "Палау",
+            "sortOrder": 149
+        },
+        {
+            "id": 151,
+            "nationality": "Палестинец",
+            "sortOrder": 150
+        },
+        {
+            "id": 152,
+            "nationality": "Панамец",
+            "sortOrder": 151
+        },
+        {
+            "id": 153,
+            "nationality": "Папуа-Новая Гвинея",
+            "sortOrder": 152
+        },
+        {
+            "id": 154,
+            "nationality": "Парагваец",
+            "sortOrder": 153
+        },
+        {
+            "id": 155,
+            "nationality": "Перуанец",
+            "sortOrder": 154
+        },
+        {
+            "id": 156,
+            "nationality": "Поляк",
+            "sortOrder": 155
+        },
+        {
+            "id": 157,
+            "nationality": "Португальец",
+            "sortOrder": 156
+        },
+        {
+            "id": 158,
+            "nationality": "Пуэрториканец",
+            "sortOrder": 157
+        },
+        {
+            "id": 159,
+            "nationality": "Руандиец",
+            "sortOrder": 158
+        },
+        {
+            "id": 160,
+            "nationality": "Румынец",
+            "sortOrder": 159
+        },
+        {
+            "id": 161,
+            "nationality": "Русский",
+            "sortOrder": 160
+        },
+        {
+            "id": 162,
+            "nationality": "Сальвадорец",
+            "sortOrder": 161
+        },
+        {
+            "id": 163,
+            "nationality": "Саммаринец",
+            "sortOrder": 162
+        },
+        {
+            "id": 164,
+            "nationality": "Самоанец",
+            "sortOrder": 163
+        },
+        {
+            "id": 165,
+            "nationality": "Саудовец",
+            "sortOrder": 164
+        },
+        {
+            "id": 166,
+            "nationality": "Свази",
+            "sortOrder": 165
+        },
+        {
+            "id": 167,
+            "nationality": "Сенегалец",
+            "sortOrder": 166
+        },
+        {
+            "id": 168,
+            "nationality": "Серб",
+            "sortOrder": 167
+        },
+        {
+            "id": 169,
+            "nationality": "Сириец",
+            "sortOrder": 168
+        },
+        {
+            "id": 170,
+            "nationality": "Словенец",
+            "sortOrder": 169
+        },
+        {
+            "id": 171,
+            "nationality": "Сомалиец",
+            "sortOrder": 170
+        },
+        {
+            "id": 172,
+            "nationality": "Суданец",
+            "sortOrder": 171
+        },
+        {
+            "id": 173,
+            "nationality": "Суринамец",
+            "sortOrder": 172
+        },
+        {
+            "id": 174,
+            "nationality": "Таджик",
+            "sortOrder": 173
+        },
+        {
+            "id": 175,
+            "nationality": "Таджикец",
+            "sortOrder": 174
+        },
+        {
+            "id": 176,
+            "nationality": "Таец",
+            "sortOrder": 175
+        },
+        {
+            "id": 177,
+            "nationality": "Тайваньец",
+            "sortOrder": 176
+        },
+        {
+            "id": 178,
+            "nationality": "Танзаниец",
+            "sortOrder": 177
+        },
+        {
+            "id": 179,
+            "nationality": "Татарин",
+            "sortOrder": 178
+        },
+        {
+            "id": 180,
+            "nationality": "Тринидадец",
+            "sortOrder": 179
+        },
+        {
+            "id": 181,
+            "nationality": "Тристаниан",
+            "sortOrder": 180
+        },
+        {
+            "id": 182,
+            "nationality": "Тувалу",
+            "sortOrder": 181
+        },
+        {
+            "id": 183,
+            "nationality": "Тунисец",
+            "sortOrder": 182
+        },
+        {
+            "id": 184,
+            "nationality": "Туркмен",
+            "sortOrder": 183
+        },
+        {
+            "id": 185,
+            "nationality": "Турок",
+            "sortOrder": 184
+        },
+        {
+            "id": 186,
+            "nationality": "Угандиец",
+            "sortOrder": 185
+        },
+        {
+            "id": 187,
+            "nationality": "Узбек",
+            "sortOrder": 186
+        },
+        {
+            "id": 188,
+            "nationality": "Уйгур",
+            "sortOrder": 187
+        },
+        {
+            "id": 189,
+            "nationality": "Украинец",
+            "sortOrder": 188
+        },
+        {
+            "id": 190,
+            "nationality": "Уоллисианец",
+            "sortOrder": 189
+        },
+        {
+            "id": 191,
+            "nationality": "Уругваец",
+            "sortOrder": 190
+        },
+        {
+            "id": 192,
+            "nationality": "Фарерские острова",
+            "sortOrder": 191
+        },
+        {
+            "id": 193,
+            "nationality": "Фиджиец",
+            "sortOrder": 192
+        },
+        {
+            "id": 194,
+            "nationality": "Филиппинец",
+            "sortOrder": 193
+        },
+        {
+            "id": 195,
+            "nationality": "Фин",
+            "sortOrder": 194
+        },
+        {
+            "id": 196,
+            "nationality": "Француз",
+            "sortOrder": 195
+        },
+        {
+            "id": 197,
+            "nationality": "Хорват",
+            "sortOrder": 196
+        },
+        {
+            "id": 198,
+            "nationality": "Центральноафриканец",
+            "sortOrder": 197
+        },
+        {
+            "id": 199,
+            "nationality": "Чадец",
+            "sortOrder": 198
+        },
+        {
+            "id": 200,
+            "nationality": "Черногорец",
+            "sortOrder": 199
+        },
+        {
+            "id": 201,
+            "nationality": "Чех",
+            "sortOrder": 200
+        },
+        {
+            "id": 202,
+            "nationality": "Чилиец",
+            "sortOrder": 201
+        },
+        {
+            "id": 203,
+            "nationality": "Швед",
+            "sortOrder": 202
+        },
+        {
+            "id": 204,
+            "nationality": "Шотландец",
+            "sortOrder": 203
+        },
+        {
+            "id": 205,
+            "nationality": "Шри-ланкиец",
+            "sortOrder": 204
+        },
+        {
+            "id": 206,
+            "nationality": "Эритреец",
+            "sortOrder": 205
+        },
+        {
+            "id": 207,
+            "nationality": "Эстонец",
+            "sortOrder": 206
+        },
+        {
+            "id": 208,
+            "nationality": "Эфиопец",
+            "sortOrder": 207
+        },
+        {
+            "id": 209,
+            "nationality": "Южноафриканец",
+            "sortOrder": 208
+        },
+        {
+            "id": 210,
+            "nationality": "Ямаец",
+            "sortOrder": 209
+        },
+        {
+            "id": 211,
+            "nationality": "Японец",
+            "sortOrder": 210
+        },
+        {
+            "id": 214,
+            "nationality": "Чечен",
+            "sortOrder": 214
+        },
+        {
+            "id": 215,
+            "nationality": "Цыган",
+            "sortOrder": 215
+        },
+        {
+            "id": 217,
+            "nationality": "Ингуш",
+            "sortOrder": 217
+        },
+        {
+            "id": 218,
+            "nationality": "Бурят",
+            "sortOrder": 218
+        },
+        {
+            "id": 219,
+            "nationality": "Хакас",
+            "sortOrder": 219
+        },
+        {
+            "id": 221,
+            "nationality": "Араб",
+            "sortOrder": 221
+        },
+        {
+            "id": 222,
+            "nationality": "Лак",
+            "sortOrder": 222
+        },
+        {
+            "id": 223,
+            "nationality": "Хемшилы",
+            "sortOrder": 223
+        },
+        {
+            "id": 224,
+            "nationality": "Калмак",
+            "sortOrder": 224
+        },
+        {
+            "id": 226,
+            "nationality": "Не указано",
+            "sortOrder": 226
+        }
+    ],
+    "message": "Список национальностей"
+}
