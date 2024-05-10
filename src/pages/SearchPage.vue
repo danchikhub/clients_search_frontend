@@ -2,7 +2,9 @@
     <q-page>
         <div class="row" style="height: 90vh">
             <div class="col-12 flex content-center justify-center">
+                
                 <q-card class="q-ma-xl">
+                    <div v-if="noClient" class="text-center q-pa-sm text-h6 text-red"> Клиент не найден, вы можете завести его вручную </div>
                     <q-tabs v-model="tab" dense class="text-teal" active-color="primary" indicator-color="primary"
                         align="justify" narrow-indicator>
                         <q-tab name="individual" label="Физические лица" icon="person" no-caps />
@@ -158,7 +160,7 @@
     </q-page>
 </template>
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { getClient } from 'src/services';
 const tab = ref('individual');
@@ -179,19 +181,25 @@ const goTo = () => {
     router.push('/create/' + tab.value)
 }
 
+const noClient = ref(false)
+
 const searchClient = async () => {
  
     if (tab.value == 'individual') {
         
         const response = await getClient(individualSubTab.value, individualSearch.value[individualSubTab.value], 'I');
         if(!response.data.result) {
-            console.log('no work')
+            noClient.value = true;
+            return
         }
+
+        noClient.value = false;
 
         router.replace({
             path: '/client-details',
             query: {
-                subjectId: response.data.subjectId
+                subjectId: response.data.subjectId,
+                clientType: tab.value == "individual" ? "I" : "L"
             }
         })
     }

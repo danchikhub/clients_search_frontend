@@ -44,3 +44,73 @@ export const getClient = async (param, value, clientType) => {
 
     return response
 }
+
+export const fetchSubject = async (subjectId) => {
+    const response = await api.get('subject/getData', {
+        params: {
+            subjectId: subjectId
+        }
+    })
+
+    return response
+}
+
+export const fetchIndividual = async (subjectId) => {
+    const response = await api.get('individual/getData', {
+        params: {
+            subjectId: subjectId
+        }
+    })
+
+    return response
+}
+
+export const fetchLegal = async (subjectId) => {
+    const response = await api.get('legal/getData', {
+        params: {
+            subjectId: subjectId
+        }
+    })
+
+    return response
+}
+
+export const fetchContacts = async (subjectId) => {
+    const response = await api.get('contact/getData', {
+        params: {
+            subjectId: subjectId
+        }
+    })
+
+    return response
+}
+
+export const fetchDocuments = async (subjectId) => {
+    const response = await api.get('document/getData', {
+        params: {
+            subjectId: subjectId
+        }
+    })
+
+    return response
+}
+
+export const fetchAddress = async (subjectId) => {
+    const response = await api.get('address/getData', {
+        params: {
+            subjectId: subjectId
+        }
+    })
+
+    return response
+}
+
+export const fetchNote = async (subjectId) => {
+    const response = await api.get('note/getData', {
+        params: {
+            subjectId: subjectId
+        }
+    })
+
+    return response
+}
