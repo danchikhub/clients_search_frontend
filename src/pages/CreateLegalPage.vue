@@ -176,12 +176,14 @@
 </template>
 <script setup>
 import { computed, reactive, ref, watch } from 'vue';
+import { useRouter } from 'vue-router';
 import documentTypes from '../json/documentTypes.json'
 import areas from '../json/areas.json'
 import addressCode from '../json/addressCode.json'
 import { cyrillicToLatin } from 'src/utils/transliteration';
 import { createAddress, createDocument, createLegal, createNote, createSubject, createContact } from 'src/services';
 
+const router = useRouter()
 
 //data
 const step = ref(1);

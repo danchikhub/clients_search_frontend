@@ -2,9 +2,8 @@
     <q-page>
         <div class="row" style="height: 90vh">
             <div class="col-12 flex content-center justify-center">
-                
+
                 <q-card class="q-ma-xl">
-                    <div v-if="noClient" class="text-center q-pa-sm text-h6 text-red"> Клиент не найден, вы можете завести его вручную </div>
                     <q-tabs v-model="tab" dense class="text-teal" active-color="primary" indicator-color="primary"
                         align="justify" narrow-indicator>
                         <q-tab name="individual" label="Физические лица" icon="person" no-caps />
@@ -32,14 +31,16 @@
                                             <q-tab-panel name="inn">
                                                 <div>
                                                     <div class="text-h5 text-center q-mb-md">Поиск клиента по ИНН</div>
-                                                    <q-input v-model="individualSearch.inn" label="Введите ИНН" name="Email" required />
+                                                    <q-input v-model="individualSearch.inn" label="Введите ИНН"
+                                                        name="Email" required />
                                                 </div>
 
                                             </q-tab-panel>
                                             <q-tab-panel name="fio">
                                                 <div>
                                                     <div class="text-h5 text-center q-mb-md">Поиск клиента по ФИО</div>
-                                                    <q-input v-model="individualSearch.fio" label="Введите ФИО" name="Email" required />
+                                                    <q-input v-model="individualSearch.fio" label="Введите ФИО"
+                                                        name="Email" required />
                                                 </div>
 
                                             </q-tab-panel>
@@ -55,7 +56,8 @@
                                             <q-tab-panel name="code">
                                                 <div>
                                                     <div class="text-h5 text-center q-mb-md">Поиск клиента по коду</div>
-                                                    <q-input v-model="individualSearch.code" label="Введите код клиента" name="Email" required />
+                                                    <q-input v-model="individualSearch.code" label="Введите код клиента"
+                                                        name="Email" required />
                                                 </div>
                                             </q-tab-panel>
                                             <q-tab-panel name="cards">
@@ -66,7 +68,7 @@
                                                 </div>
                                             </q-tab-panel>
                                         </q-tab-panels>
-                                        
+
                                         <div class="flex justify-end q-mt-xl">
                                             <div>
                                                 <q-btn dense flat no-caps class="q-px-sm q-mr-sm" color="grey"
@@ -102,7 +104,8 @@
                                             <q-tab-panel name="inn">
                                                 <div>
                                                     <div class="text-h5 text-center q-mb-md">Поиск клиента по ИНН</div>
-                                                    <q-input label="Введите ИНН" name="Email" required />
+                                                    <q-input v-model="legalSearch.inn" label="Введите ИНН" name="Email"
+                                                        required />
                                                 </div>
 
                                             </q-tab-panel>
@@ -110,7 +113,8 @@
                                                 <div>
                                                     <div class="text-h5 text-center q-mb-md">Поиск клиента по
                                                         наимениванию</div>
-                                                    <q-input label="Введите название" name="Email" required />
+                                                    <q-input v-model="legalSearch.name" label="Введите название"
+                                                        name="Email" required />
                                                 </div>
 
                                             </q-tab-panel>
@@ -118,14 +122,16 @@
                                             <q-tab-panel name="partyId">
                                                 <div>
                                                     <div class="text-h5 text-center q-mb-md">Поиск клиента по ID</div>
-                                                    <q-input label="Введите ID" name="Email" required />
+                                                    <q-input v-model="legalSearch.partyId" label="Введите ID"
+                                                        name="Email" required />
                                                 </div>
                                             </q-tab-panel>
 
                                             <q-tab-panel name="code">
                                                 <div>
                                                     <div class="text-h5 text-center q-mb-md">Поиск клиента по коду</div>
-                                                    <q-input label="Введите код" name="Email" required />
+                                                    <q-input v-model="legalSearch.code" label="Введите код" name="Email"
+                                                        required />
                                                 </div>
                                             </q-tab-panel>
                                             <q-tab-panel name="account">
@@ -142,8 +148,8 @@
                                                     @click="goTo"><q-icon name="person_add" class="q-mr-sm" /> Завести
                                                     клиента
                                                     вручную</q-btn>
-                                                <q-btn dense flat no-caps class="q-mx-sm q-px-sm"
-                                                    color="primary"><q-icon name="search" class="q-mr-sm" /> Найти
+                                                <q-btn dense flat no-caps class="q-mx-sm q-px-sm" color="primary"
+                                                    @click="searchClient"><q-icon name="search" class="q-mr-sm" /> Найти
                                                     клиента</q-btn>
                                             </div>
                                         </div>
@@ -161,8 +167,11 @@
 </template>
 <script setup>
 import { ref, computed } from 'vue';
+import { useQuasar } from 'quasar'
 import { useRouter } from 'vue-router';
 import { getClient } from 'src/services';
+
+const $q = useQuasar()
 const tab = ref('individual');
 const individualSubTab = ref('inn');
 const legalSubTab = ref('inn')
@@ -177,19 +186,51 @@ const individualSearch = ref({
     fio: ''
 })
 
+const legalSearch = ref({
+    inn: '',
+    partyId: '',
+    code: '',
+    name: ''
+})
+
 const goTo = () => {
     router.push('/create/' + tab.value)
 }
-
+const triggerNegative = () => {
+    $q.notify({
+        type: 'negative',
+        message: 'Клиент не найден.'
+    })
+}
 const noClient = ref(false)
 
 const searchClient = async () => {
- 
+
     if (tab.value == 'individual') {
-        
+
         const response = await getClient(individualSubTab.value, individualSearch.value[individualSubTab.value], 'I');
-        if(!response.data.result) {
-            noClient.value = true;
+
+        if (!response.data.result) {
+            triggerNegative()
+
+            return
+        }
+
+
+        noClient.value = false;
+
+        router.replace({
+            path: '/client-details',
+            query: {
+                subjectId: response.data.subjectId,
+                clientType: tab.value == "individual" ? "I" : "L"
+            }
+        })
+    } else {
+        const response = await getClient(legalSubTab.value, legalSearch.value[legalSubTab.value], 'L');
+        if (!response.data.result) {
+
+            triggerNegative()
             return
         }
 
@@ -199,7 +240,7 @@ const searchClient = async () => {
             path: '/client-details',
             query: {
                 subjectId: response.data.subjectId,
-                clientType: tab.value == "individual" ? "I" : "L"
+                clientType: "L"
             }
         })
     }
